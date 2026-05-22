@@ -1,0 +1,154 @@
+/* ==========================================================================
+   Dark theme (manual toggle via html[data-theme="dark"])
+   ========================================================================== */
+
+/* --- Toggle button (visible in both themes) --- */
+.masthead__inner-wrap {
+  position: relative;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  transform: translateY(-50%);
+  z-index: 20;
+  padding: 0.25em 0.4em;
+  background: transparent;
+  border: 0;
+  font-size: 1.15em;
+  line-height: 1;
+  cursor: pointer;
+  color: inherit;
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+.theme-toggle:hover {
+  opacity: 0.7;
+}
+
+/* --- Dark palette overrides --- */
+html[data-theme="dark"] {
+  $dk-bg:       #1a1d21;
+  $dk-surface:  #15181c;
+  $dk-border:   #2b2f36;
+  $dk-code:     #24282e;
+  $dk-text:     #cfd3d8;
+  $dk-heading:  #eceff2;
+  $dk-muted:    #9aa0a6;
+  $dk-link:     #6cb6cd;
+  $dk-link-hov: #8ecadb;
+
+  background-color: $dk-bg;
+
+  body {
+    background-color: $dk-bg;
+    color: $dk-text;
+  }
+
+  /* Masthead — match body so the bar reads as part of the page (only the
+     bottom border separates it), instead of a darker floating block */
+  .masthead {
+    background: $dk-bg !important;
+    border-bottom: 1px solid $dk-border !important;
+  }
+  .greedy-nav {
+    background: $dk-bg;
+  }
+  .greedy-nav .hidden-links {
+    background: $dk-surface;
+    border-color: $dk-border;
+  }
+  .greedy-nav .hidden-links a:hover {
+    color: #fff;
+    background: $dk-border;
+  }
+  .masthead__menu-item a,
+  .greedy-nav a {
+    color: $dk-text;
+  }
+  .greedy-nav a:hover {
+    color: #fff;
+  }
+  .greedy-nav .navicon,
+  .greedy-nav .navicon:before,
+  .greedy-nav .navicon:after {
+    background: $dk-text;
+  }
+
+  /* Body links */
+  a {
+    color: $dk-link;
+    &:hover { color: $dk-link-hov; }
+    &:visited { color: $dk-link; }
+  }
+
+  /* Headings & titles */
+  h1, h2, h3, h4, h5, h6,
+  .page__title,
+  .page__content h1,
+  .page__content h2,
+  .page__content h3,
+  .page__content h4,
+  .archive__item-title {
+    color: $dk-heading;
+  }
+  .archive__item-title a { color: $dk-link; }
+  .page__title { border-bottom-color: $dk-border; }
+
+  /* Sidebar / author profile */
+  .sidebar,
+  .author__name,
+  .author__bio,
+  .author__urls li {
+    color: $dk-text;
+  }
+  .author__avatar img {
+    border-color: $dk-border;
+  }
+  .author__urls a {
+    color: $dk-link;
+  }
+
+  /* Footer */
+  .page__footer {
+    background-color: $dk-surface;
+    color: $dk-muted;
+  }
+  .page__footer a { color: $dk-muted; }
+  .page__footer-follow .social-icons a { color: $dk-muted; }
+
+  /* Code */
+  code,
+  pre,
+  .highlight,
+  .highlighter-rouge .highlight {
+    background-color: $dk-code;
+    color: #e3e6ea;
+  }
+  p > code,
+  li > code,
+  a > code {
+    background-color: $dk-code;
+  }
+
+  /* Quotes, rules, meta, tables */
+  blockquote {
+    border-left-color: $dk-link;
+    color: $dk-muted;
+  }
+  hr { border-color: $dk-border; }
+  .page__meta { color: $dk-muted; }
+  table { color: $dk-text; }
+  td, th { border-color: $dk-border; }
+  tr { border-bottom-color: $dk-border; }
+  thead { border-bottom-color: $dk-border; }
+
+  /* Forms */
+  input, textarea, select {
+    background-color: #22262d;
+    color: $dk-text;
+    border-color: $dk-border;
+  }
+}

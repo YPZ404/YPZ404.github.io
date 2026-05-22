@@ -4,9 +4,9 @@
 
 .masthead {
   position: fixed;
-  background: white;
+  background: $background-color;
   border-bottom: 1px solid $border-color;
-  height: $masthead-height;
+  min-height: $masthead-height;
   top: 0;
   width: 100%;
 
@@ -19,7 +19,9 @@
   &__inner-wrap {
     @include container;
     @include clearfix;
-    padding: 1em 1em 1em;
+    position: relative;
+    min-height: $masthead-height;
+    padding: 0.5em 4em 0.5em 1em;
     font-family: $sans-serif-narrow;
 
     @include breakpoint($x-large) {
