@@ -29,7 +29,8 @@
 }
 
 /* --- Dark palette overrides --- */
-html[data-theme="dark"] {
+html[data-theme="dark"],
+html:not([data-theme="light"]) {
   $dk-bg:       #1a1d21;
   $dk-surface:  #15181c;
   $dk-border:   #2b2f36;

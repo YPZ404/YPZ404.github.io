@@ -18,9 +18,11 @@
 <script>
   /* Apply saved theme before paint; default to dark for first-time visitors. */
   (function() {
+    var key = 'ypz-theme';
     var theme = 'dark';
     try {
-      theme = localStorage.getItem('theme') || theme;
+      localStorage.removeItem('theme');
+      theme = localStorage.getItem(key) || theme;
     } catch (e) {}
     document.documentElement.setAttribute('data-theme', theme);
   })();
