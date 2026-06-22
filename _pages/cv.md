@@ -11,12 +11,18 @@ redirect_from:
 
 Education
 ======
+* Ph.D. in Computer Science, The University of Sydney, Sydney, Australia, 2026–Present (current)
+
 * M.Phil. (Engineering) in Computer Science, The University of Sydney, Sydney, Australia, 2026
 
 * B.E. (Honours) in Software Engineering, Major in Computer Engineering, The University of Sydney, Sydney, Australia, 2024
 
 Research experience
 ======
+* Jun 2026 – Present: Data Research Analyst (Part-time)
+  * Royal North Shore Hospital, Northern Sydney Local Health District, St Leonards, NSW, Australia
+  * Project: Neurofibromatosis (NF1) AI Imaging Analysis
+
 * May 2024 – Present: Researcher
   * Biomedical Data Analysis and Visualisation (BDAV) Lab, School of Computer Science, The University of Sydney, Sydney, Australia
   * Supervisors: Prof. Jinman Kim, Dr Usman Naseem, Prof. Adam G. Dunn
