@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Master of Philosophy (Engineering) in Computer Science researcher at [The University of Sydney](https://www.sydney.edu.au/), based in the [Biomedical Data Analysis and Visualisation (BDAV) Lab](https://bdavsydney.github.io/) since 2024. My research focuses on **multimodal medical image analysis in vision–language models for clinical decision support**.
+I am a Ph.D. student in Computer Science at [The University of Sydney](https://www.sydney.edu.au/), based in the [Biomedical Data Analysis and Visualisation (BDAV) Lab](https://bdavsydney.github.io/) since 2024, and a part-time Data Research Analyst at Royal North Shore Hospital, Northern Sydney Local Health District. My research focuses on **multimodal medical image analysis in vision–language models for clinical decision support**.
 
 Previously, I worked as a research intern at the [Garvan Institute of Medical Research](https://www.garvan.org.au/) from 2023 to 2024, optimising the single-cell RNA-seq tool [CellRegMap](https://github.com/limix/CellRegMap) for eQTL mapping. I also built a real-time video analysis system for eating-behaviour biofeedback in children with cerebral palsy for my undergraduate honours thesis.
 

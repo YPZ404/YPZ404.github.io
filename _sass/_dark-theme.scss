@@ -111,6 +111,14 @@ html:not([data-theme="light"]) {
   .author__urls a {
     color: $dk-link;
   }
+  .author__urls i,
+  .author__urls .fa,
+  .author__urls .fas,
+  .author__urls .fab,
+  .author__urls .fa-solid,
+  .author__urls .ai {
+    color: currentColor;
+  }
 
   /* Footer */
   .page__footer {
@@ -119,6 +127,7 @@ html:not([data-theme="light"]) {
   }
   .page__footer a { color: $dk-muted; }
   .page__footer-follow .social-icons a { color: $dk-muted; }
+  .page__footer-follow .social-icons i { color: currentColor; }
 
   /* Code */
   code,
